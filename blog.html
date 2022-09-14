@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title> Speed Monster</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+
+</head>
+<body>
+    <header class="container  mt-5">
+        <!-- menu bar -->
+
+        <section>
+            <div class="d-flex justify-content-between ">
+             <h1 > <a target="_blank"  style="text-decoration: none; " href="index.html">Home</a> </h1>
+             <h1><a  style="text-decoration: none; " href="blog.html">Blog</a> </h1>
+            </div>
+           </section>
+    
+    
+    </header>
+
+    <main class="mt-5">
+        <section class="container mb-5" id="about">
+
+            <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                <h1 class="text-center fw-bold text-wrap" style="max-width: 35rem;">
+                    Questions Answer Part
+                  </h1>
+                
+                  <p class="text-center text-wrap mb-5" style="max-width: 28rem;">Here some common question. Let answer this Four Question</p>
+              </div>
+          
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button text-black fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      What are the difference between Var, Let and Const ?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Var:</strong> The scope of a var variable is functional scope.It can be updated and re-declared into the scope.It can be declared without initialization.It can be accessed without initialization as its default value is “undefined”. hoisting done , with initializing as ‘default’ value<br>
+
+                        <strong>Let:</strong> The scope of a let variable is block scope. It can be updated but cannot be re-declared into the scope. It can be declared without initialization. It cannot be accessed without initialization otherwise it will give ‘referenceError’. Hoisting is done , but not initialized (this is the reason for error when we access the let variable before declaration/initialization <br>
+
+                        <strong>Const:</strong>The scope of a const variable is block scope. It cannot be updated or re-declared into the scope. It cannot be declared without initialization. It cannot be accessed without initialization, as it cannot be declared without initialization. Hoisting is done, but not initialized (this is the reason for error when we access the const variable before declaration/initialization<br>
+                       
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3 border border-1">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed text-black fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What are the difference between Regular and Arrow Function?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Arrow function — also called fat arrow function — is a new feature introduced in ES6 that is a more concise syntax for a writing function expression.<br>
+                        <strong>Following are the main differences:</strong><br>
+
+                        <Strong>1) Syntax:</Strong> A developer can get the same result as regular functions by writing a few lines of code using arrow function.<br>
+
+                        <Strong>2) Arguments binding:</Strong>Arrow functions do not have arguments binding.<br>
+
+                        <Strong>3) Use of this keyword:</Strong>unlike Regular functions, arrow function does not have their own "this" keyword.
+                        The value of this inside an arrow function remains the same throughout the lifecycle of the function and is always bound to the value of this in the closest non-arrow parent function.<br>
+
+<Strong>4) Using a new keyword:</Strong>Regular functions created using function declarations or expressions are constructible and callable. Regular functions are constructible; they can be called using the new keyword.
+However, the arrow functions are only callable and not constructible, i.e., arrow functions can never be used as constructor functions.<br>
+
+<Strong>5) No duplicate named parameters:</Strong>Arrow functions can never have duplicate named parameters, whether in strict or non-strict mode.
+However, We can use duplicate named parameters for regular function in non-strict mode.
+
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3 border border-1">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed text-black fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Difference between forEach(), map(), filter(), find() ?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                     <strong>forEach():</strong>forEach(),is used to execute the same code on every element in an array but does not change the array and it returns undefined.<br>
+
+                     <strong>map():</strong>map() executes the same code on every element in an array and returns a new array with the updated elements.<br>
+
+                     <strong>filter():</strong>filter() checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria.<br>
+
+                     <strong>find():</strong>The find() method returns the value of the first element that passes a test. Its method executes a function for each array element. 
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-5 border border-1">
+                  <h2 class="accordion-header" id="headingfour">
+                    <button class="accordion-button collapsed text-black fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                     Why we use template String? 
+                    </button>
+                  </h2>
+                  <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Template strings are a powerful feature of modern JavaScript released in ES6. It lets us insert/interpolate variables and expressions into strings without needing to concatenate like in older versions of JavaScript. It allows us to create strings that are complex and contain dynamic elements. Another great thing that comes with template strings are tags. Tags are functions that take a string and the decomposed parts of the string as parameters and are great for converting strings to different entities.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+          
+          </section>
+        
+    </main>
+    <footer class="border-top  text-center " style="height: 23vh; "> 
+
+        <p class="mt-5 fw-bold ">Copyright @ 2022 All Rights Reserved By Tuhin Ahmed</p>
+            </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+   
+</body>
+</html>
