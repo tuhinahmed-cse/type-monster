@@ -63,7 +63,7 @@
                 <div class="accordion-item mb-3 border border-1">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed text-black fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        What are the difference between Global Scope and Block Scope?
+                        What are the difference between Global Scope and Block Scope ?
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -85,30 +85,34 @@ Global variables can be accessed from anywhere in a JavaScript program.Variables
                 <div class="accordion-item mb-3 border border-1">
                   <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed text-black fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Difference between forEach(), map(), filter(), find() ?
+                        How to work event loop in javascript ?
                     </button>
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                     <strong>forEach():</strong>forEach(),is used to execute the same code on every element in an array but does not change the array and it returns undefined.<br>
+                       <strong>The event loop : </strong> JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. This model is quite different from models in other languages like C and Java. <br>
+                       The event loop is the secret behind JavaScript’s asynchronous programming. JS executes all operations on a single thread, but using a few smart data structures, it gives us the illusion of multi-threading.Whenever an async function is called, it is sent to a browser API. These are APIs built into the browser. Based on the command received from the call stack, the API starts its own single-threaded operation.
 
-                     <strong>map():</strong>map() executes the same code on every element in an array and returns a new array with the updated elements.<br>
 
-                     <strong>filter():</strong>filter() checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria.<br>
-
-                     <strong>find():</strong>The find() method returns the value of the first element that passes a test. Its method executes a function for each array element. 
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item mb-5 border border-1">
                   <h2 class="accordion-header" id="headingfour">
                     <button class="accordion-button collapsed text-black fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                     Why we use template String? 
+                        How many ways we get undefined in javascript ? 
                     </button>
                   </h2>
                   <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Template strings are a powerful feature of modern JavaScript released in ES6. It lets us insert/interpolate variables and expressions into strings without needing to concatenate like in older versions of JavaScript. It allows us to create strings that are complex and contain dynamic elements. Another great thing that comes with template strings are tags. Tags are functions that take a string and the decomposed parts of the string as parameters and are great for converting strings to different entities.
+                       <strong> Undefined </strong> is a primitive value in JavaScript. A variable or an object has an undefined value when no value is assigned before using it. So you can say that undefined means lack of value or unknown value.
+                       <br>Example: undefined
+                       var myVar;
+                       alert(myVar); // undefined <br> 1. In the above example, we have not assigned any value to a variable named 'myVar'. A variable 'myVar' lacks a value. So it is undefined. <br> 2. You will get undefined value when you call a non-existent property or method of an object. 
+                       <br> 3. If you pass less arguments in function call then, that parameter will have undefined value. <br> 4. An undefined evaluates to false when used in conditional expression. <br> 5. undefined is one of the main reasons to produce a runtime error in the JavaScript application. This happens if you don't check the value of unknown return variables before using it. If you are not sure that a variable will always have some value, the best practice is to check the value of variables for undefined before using them.
+
+
+
                     </div>
                   </div>
                 </div>
