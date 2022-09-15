@@ -227,5 +227,14 @@ button {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
+  .header{
+
+    display: grid;
+    margin-top: 20px;
+    margin-left: 40%;
+    margin-right: 50%;
+  
+  }
 }
 
